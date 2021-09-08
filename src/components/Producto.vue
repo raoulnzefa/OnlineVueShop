@@ -1,6 +1,6 @@
 <template>
-  <div id="all" class="m-2">
-    <div class="container my-4 ">
+  <div id="all" class="">
+    <div class="container  ">
       <p class="fs-1 fw-bolder text-start">Catalogo</p>
       <div class=" row ">
         <div
