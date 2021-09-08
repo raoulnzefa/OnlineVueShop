@@ -1,0 +1,40 @@
+{
+    "products": [
+        {
+            "nombre": "HP Portatil",
+            "Descripcion":"computador de escritorio multi proposito",
+            "categoria": "London",
+            "marca": "Lenovo",
+            "precio":"3.000.000",
+            "estado":"Disponible",
+            "foto": ""
+        },
+        {
+            "nombre": "MackBook Portatil",
+            "Descripcion":"computador de escritorio multi proposito",
+            "categoria": "London",
+            "marca": "MackBook",
+            "precio":"3.000.000",
+            "estado":"Disponible",
+            "foto": ""
+        },
+        {
+            "nombre": "Toshiba Portatil",
+            "Descripcion":"computador de escritorio multi proposito",
+            "categoria": "London",
+            "marca": "HP",
+            "precio":"5.000.000",
+            "estado":"Disponible",
+            "foto": ""
+        },
+        {
+            "nombre": "Lenovo Portatil",
+            "Descripcion":"computador de escritorio multi proposito",
+            "categoria": "London",
+            "marca": "Toschiba",
+            "precio":"7.000.000",
+            "estado":"Disponible",
+            "foto": ""
+        }
+    ]
+}
