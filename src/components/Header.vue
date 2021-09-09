@@ -18,7 +18,15 @@
             <li><a href="#" class="nav-link px-2 text-white">Hardware</a></li>
             <li><a href="#" class="nav-link px-2 text-white">Camaras</a></li>
             <li><a href="#" class="nav-link px-2 text-white">Impresoras</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Contacto</a></li>
+            <li>
+              <a
+                href="/added/test.pdf"
+                target="_blank"
+                class="nav-link px-2 text-white"
+              >
+                Precios
+              </a>
+            </li>
           </ul>
 
           <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">

@@ -6,6 +6,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    servicios: [],
+    categorias: [],
     productos: [],
     producto: {
       nombre: '',
@@ -19,11 +21,28 @@ export default new Vuex.Store({
     cargarProductos(state, payload) {
       state.productos = payload;
     },
+    cargarCategorias(state, payload) {
+      state.categorias = payload;
+    },
+    cargarServicios(state, payload) {
+      state.servicios = payload;
+    },
   },
   actions: {
-    async cargarJsonData({ commit, state }, usuario) {
-      const res = productData.products
-      commit('cargarProductos', res)
+    cargarJsonProductos({ commit, state }, usuario) {
+      const res = productData
+      var listProducts = res.computadores.concat(res.camaras, res.partes)
+      commit('cargarProductos', listProducts)
+    },
+    cargarJsonCategorias({ commit, state }, usuario) {
+      const res = productData
+      var listCategorias = res.categorias
+      commit('cargarCategorias', listCategorias)
+    },
+    cargarJsonServicios({ commit, state }, usuario) {
+      const res = productData
+      var listServicios = res.servicios
+      commit('cargarServicios', listServicios)
     },
   },
   modules: {

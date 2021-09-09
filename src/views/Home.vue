@@ -1,9 +1,12 @@
 <template>
   <div>
     <Header></Header>
+    <ButtonW></ButtonW>
     <Carousel></Carousel>
-    <Menulist></Menulist>
-    <ProductosPart></ProductosPart>
+    <Menulist> </Menulist>
+    <CategoriasPart></CategoriasPart>
+    <ServiciosPart></ServiciosPart>
+    <FooterPage></FooterPage>
   </div>
 </template>
 
@@ -12,7 +15,11 @@
 import Header from "@/components/Header.vue";
 import Carousel from "@/components/Carousel.vue";
 import Menulist from "@/components/Menulist.vue";
-import ProductosPart from "@/components/ProductosPart.vue";
+import CategoriasPart from "@/components/CategoriasPart.vue";
+import ServiciosPart from "@/components/ServiciosPart.vue";
+import ButtonW from "@/components/ButtonW.vue";
+import FooterPage from "@/components/FooterPage.vue";
+import { mapActions } from "vuex";
 
 export default {
   name: "Home",
@@ -20,12 +27,17 @@ export default {
     Header,
     Carousel,
     Menulist,
-    ProductosPart,
+    CategoriasPart,
+    ServiciosPart,
+    ButtonW,
+    FooterPage,
+  },
+  methods: {
+    ...mapActions(["cargarJsonProductos"]),
+  },
+  created() {
+    this.cargarJsonProductos();
   },
 };
-
-/*<div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>*/
 </script>
+<style></style>
