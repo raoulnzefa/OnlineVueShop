@@ -23,7 +23,7 @@
                   </p>
                   <ButtonC
                     bText="Ver Producto"
-                    iconButton="true"
+                    :iconButton="true"
                     iconChoosen="fa-check-square"
                   />
                 </div>

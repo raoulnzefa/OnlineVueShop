@@ -26,7 +26,7 @@
               <div class=" my-2 ">
                 <ButtonC
                   bText="Ver Productos"
-                  iconButton="true"
+                  :iconButton="true"
                   iconChoosen="fa-heart-o"
                 />
               </div>

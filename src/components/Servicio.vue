@@ -26,7 +26,7 @@
               <div class=" m-2 d-flex justify-content-end">
                 <ButtonC
                   bText=" Contactar"
-                  iconButton="true"
+                  :iconButton="true"
                   iconChoosen="fa-info-circle"
                 />
               </div>

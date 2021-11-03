@@ -22,24 +22,43 @@
       <div class="collapse navbar-collapse mr-auto" id="navbarNav">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active ">
-            <a href="#" target="_blank" class="nav-link ">
-              Home
-            </a>
+            <router-link
+              class="nav-link"
+              :to="{
+                name: 'Home',
+              }"
+              >Home</router-link
+            >
           </li>
           <li class="nav-item ">
-            <a href="#" class="nav-link">
-              Computadores
-            </a>
+            <router-link
+              class="nav-link"
+              :to="{
+                name: 'ProductsView',
+                params: { categoria: computadoresItems },
+              }"
+              >Computadores</router-link
+            >
           </li>
           <li class="nav-item ">
-            <a href="#" class="nav-link">
-              Seguridad
-            </a>
+            <router-link
+              class="nav-link"
+              :to="{
+                name: 'ProductsView',
+                params: { categoria: seguridadItems },
+              }"
+              >Seguridad</router-link
+            >
           </li>
           <li class="nav-item ">
-            <a href="#" class="nav-link">
-              Accesorios
-            </a>
+            <router-link
+              class="nav-link"
+              :to="{
+                name: 'ProductsView',
+                params: { categoria: accesoriosItems },
+              }"
+              >Accesorios</router-link
+            >
           </li>
           <li class="nav-item ">
             <a href="/added/test.pdf" target="_blank" class="nav-link ">
@@ -72,6 +91,13 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      computadoresItems: "computadores",
+      seguridadItems: "seguridad",
+      accesoriosItems: "accesorios",
+    };
+  },
 };
 </script>
 
