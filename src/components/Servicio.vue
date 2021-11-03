@@ -21,13 +21,14 @@
                 <span>{{ servicio.name }} </span>
               </h5>
               <p class="card-text text-start">
-                Some quick ecccxample text to build on the card title and make
-                up the bulk of the card's content.
+                {{ servicio.descripcion }}
               </p>
               <div class=" m-2 d-flex justify-content-end">
-                <a href="#" class="btn  btn-primary" style="width: 200px;"
-                  >Contactar</a
-                >
+                <ButtonC
+                  bText=" Contactar"
+                  iconButton="true"
+                  iconChoosen="fa-info-circle"
+                />
               </div>
             </div>
           </div>
@@ -40,8 +41,12 @@
 <script>
 import { mapState } from "vuex";
 import { mapActions } from "vuex";
+import ButtonC from "./subComponents/ButtonC.vue";
 
 export default {
+  components: {
+    ButtonC,
+  },
   name: "Servicio",
   computed: {
     ...mapState(["servicios"]),

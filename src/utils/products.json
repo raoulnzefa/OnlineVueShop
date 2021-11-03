@@ -2,57 +2,70 @@
     "categorias":[
         {
             "name":"computadores",
-            "url":"https://images.unsplash.com/photo-1547082299-de196ea013d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1500&q=80"
+            "url":"https://images.unsplash.com/photo-1547082299-de196ea013d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1500&q=80",
+            "descripcion":"1 Some quick ecccxample text to build on the card title and make up the bulk of the card's content."
         },
         {
             "name":"camaras",
-            "url":"https://images.unsplash.com/photo-1549109926-58f039549485?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2VjdXJpdHklMjBjYW1lcmF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+            "url":"https://images.unsplash.com/photo-1549109926-58f039549485?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2VjdXJpdHklMjBjYW1lcmF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+            "descripcion":"2 Some quick ecccxample text to build on the card title and make up the bulk of the card's content."
         },
         {
             "name":"partes",
-            "url":"https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJpbnRlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+            "url":"https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJpbnRlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+            "descripcion":"3 Some quick ecccxample text to build on the card title and make up the bulk of the card's content."
         },
         {
             "name":"teclados",
-            "url":"https://images.unsplash.com/photo-1574192324001-ee41e18ed679?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+            "url":"https://images.unsplash.com/photo-1574192324001-ee41e18ed679?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+            "descripcion":"4 Some quick ecccxample text to build on the card title and make up the bulk of the card's content."
         },
         {
             "name":"monitores",
-            "url":"https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uaXRvcnN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+            "url":"https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uaXRvcnN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+            "descripcion":"5 Some quick ecccxample text to build on the card title and make up the bulk of the card's content."
         }
     ],
     "servicios":[
         {
             "name":"mantenimiento",
-            "url":"https://images.unsplash.com/photo-1606850028922-d90aba1165c3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29tcHV0ZXIlMjBwYXJ0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            "url":"https://images.unsplash.com/photo-1606850028922-d90aba1165c3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29tcHV0ZXIlMjBwYXJ0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "descripcion":"1 Some quick ecccxample text to build on the card title and make up the bulk of the card's content."
         },
         {
             "name":"instalacion",
-            "url":"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1haW50ZW5hbmNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            "url":"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1haW50ZW5hbmNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "descripcion":"2 Some quick ecccxample text to build on the card title and make up the bulk of the card's content."
         },
         {
             "name":"reparacion",
-            "url":"https://images.unsplash.com/photo-1520520688967-7bdc16e77dc2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNvbXB1dGVyJTIwcGFydHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            "url":"https://images.unsplash.com/photo-1520520688967-7bdc16e77dc2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNvbXB1dGVyJTIwcGFydHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "descripcion":"3 Some quick ecccxample text to build on the card title and make up the bulk of the card's content."
         },
         {
             "name":"mantenimiento preventivo",
-            "url":"https://images.unsplash.com/photo-1591238372408-8b98667c0460?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGNvbXB1dGVyJTIwcGFydHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            "url":"https://images.unsplash.com/photo-1591238372408-8b98667c0460?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGNvbXB1dGVyJTIwcGFydHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "descripcion":"4 Some quick ecccxample text to build on the card title and make up the bulk of the card's content."
         },
         {
             "name":"soporte",
-            "url":"https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbnN1bHRpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            "url":"https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbnN1bHRpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "descripcion":"5 Some quick ecccxample text to build on the card title and make up the bulk of the card's content."
         },
         {
             "name":"seguridad",
-            "url":"https://images.unsplash.com/photo-1563920443079-783e5c786b83?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNlY3VyaXR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            "url":"https://images.unsplash.com/photo-1563920443079-783e5c786b83?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNlY3VyaXR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "descripcion":"6 Some quick ecccxample text to build on the card title and make up the bulk of the card's content."
         },
         {
             "name":"consultoria",
-            "url":"https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y29hY2hpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            "url":"https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y29hY2hpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "descripcion":"7 Some quick ecccxample text to build on the card title and make up the bulk of the card's content."
         },
         {
             "name":"teaching",
-            "url":"https://images.unsplash.com/photo-1526948531399-320e7e40f0ca?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29uc3VsdGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            "url":"https://images.unsplash.com/photo-1526948531399-320e7e40f0ca?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29uc3VsdGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "descripcion":"8 Some quick ecccxample text to build on the card title and make up the bulk of the card's content."
         }
     ],
     "computadores": 

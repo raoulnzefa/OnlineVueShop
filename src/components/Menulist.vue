@@ -21,7 +21,11 @@
                   <p class="card-text">
                     {{ producto.Descripcion }}
                   </p>
-                  <a href="#" class="btn btn-primary">Ver Producto</a>
+                  <ButtonC
+                    bText="Ver Producto"
+                    iconButton="true"
+                    iconChoosen="fa-check-square"
+                  />
                 </div>
               </div>
             </Slide>
@@ -36,12 +40,13 @@
 import { Carousel, Slide } from "vue-carousel";
 import { mapState } from "vuex";
 import { mapActions } from "vuex";
-
+import ButtonC from "./subComponents/ButtonC.vue";
 export default {
   name: "Menulist",
   components: {
     Carousel,
     Slide,
+    ButtonC,
   },
   data: function() {
     return {

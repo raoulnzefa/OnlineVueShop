@@ -1,53 +1,72 @@
 <template>
-  <div>
-    <header class="p-3 bg-dark text-white">
-      <div class="container">
-        <div
-          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-        >
-          <div
-            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
-          >
-            <img src="../assets/logo.svg" alt="logos company" />
-          </div>
-          <ul
-            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
-          >
-            <li><a href="#" class="nav-link px-2 text-secondary">Inicio</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Equipos</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Hardware</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Camaras</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Impresoras</a></li>
-            <li>
-              <a
-                href="/added/test.pdf"
-                target="_blank"
-                class="nav-link px-2 text-white"
-              >
-                Precios
-              </a>
-            </li>
-          </ul>
-
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-            <input
-              type="search"
-              class="form-control form-control-dark"
-              placeholder="Search..."
-              aria-label="Search"
-            />
-          </form>
-
-          <div class="text-end">
-            <button type="button" class="btn btn-outline-light me-2">
-              Login
-            </button>
-            <button type="button" class="btn btn-warning">Contactanos</button>
-          </div>
-        </div>
+  <header
+    class="bg-dark navbar navbar-dark navbar navbar-expand-lg sticky-top "
+  >
+    <div class="container">
+      <div class="navbar-brand">
+        <img src="../assets/logo.svg" alt="logos company" />
       </div>
-    </header>
-  </div>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse mr-auto" id="navbarNav">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active ">
+            <a href="#" target="_blank" class="nav-link ">
+              Home
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link">
+              Computadores
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link">
+              Seguridad
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link">
+              Accesorios
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a href="/added/test.pdf" target="_blank" class="nav-link ">
+              Precios
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <form class="col-6 form-inline">
+          <input
+            type="search"
+            class="form-control "
+            placeholder="Search..."
+            aria-label="Search"
+          />
+        </form>
+
+        <button type="button" class="btn btn-outline-light me-2 my-sm-0 col">
+          Buscar
+        </button>
+        <button type="button" class="btn btn-warning my-sm-0 col">
+          Contactanos
+        </button>
+      </div>
+    </div>
+  </header>
 </template>
 
 <script>

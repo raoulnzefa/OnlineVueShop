@@ -21,13 +21,14 @@
                 <span>{{ categoria.name }} </span>
               </h5>
               <p class="card-text text-start">
-                Some quick ecccxample text to build on the card title and make
-                up the bulk of the card's content.
+                {{ categoria.descripcion }}
               </p>
-              <div class=" m-2 ">
-                <a href="#" class="btn  btn-primary" style="width: 200px;"
-                  >Ver productos</a
-                >
+              <div class=" my-2 ">
+                <ButtonC
+                  bText="Ver Productos"
+                  iconButton="true"
+                  iconChoosen="fa-heart-o"
+                />
               </div>
             </div>
           </div>
@@ -40,8 +41,11 @@
 <script>
 import { mapState } from "vuex";
 import { mapActions } from "vuex";
-
+import ButtonC from "./subComponents/ButtonC.vue";
 export default {
+  components: {
+    ButtonC,
+  },
   name: "Categoria",
   computed: {
     ...mapState(["categorias"]),
