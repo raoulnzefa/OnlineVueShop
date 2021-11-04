@@ -1,18 +1,56 @@
 <template>
   <div class="container">
-    <ul class="list-group">
-      <li class="list-group-item">Cras justo odio</li>
-      <li class="list-group-item">Dapibus ac facilisis in</li>
-      <li class="list-group-item">Morbi leo risus</li>
-      <li class="list-group-item">Porta ac consectetur ac</li>
-      <li class="list-group-item">Vestibulum at eros</li>
+    <ul class="list-group my-5">
+      <li
+        v-for="(producto, index) in productosUpdated"
+        :key="index"
+        class="list-group-item"
+      >
+        <CardList :product="producto" />
+      </li>
     </ul>
   </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
+import { mapActions } from "vuex";
+import CardList from "./CardList.vue";
 export default {
   name: "ProductsList",
+  components: {
+    CardList,
+  },
+  props: {
+    categoria: {
+      type: String,
+      default: "",
+    },
+  },
+  methods: {
+    ...mapActions([
+      "cargarJsonComputer",
+      "cargarJsonSeguridad",
+      "cargarJsonPartes",
+    ]),
+  },
+  created() {},
+  computed: {
+    ...mapState(["productos"]),
+    productosUpdated() {
+      console.log(this.categoria);
+      if (this.categoria === "computadores") {
+        this.cargarJsonComputer();
+      }
+      if (this.categoria === "seguridad") {
+        this.cargarJsonSeguridad();
+      }
+      if (this.categoria === "accesorios") {
+        this.cargarJsonPartes();
+      }
+      return this.productos;
+    },
+  },
 };
 </script>
 

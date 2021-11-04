@@ -6,7 +6,7 @@
           <Carousel :perPage="4">
             <Slide
               class="p-2"
-              v-for="(producto, index) in productos"
+              v-for="(producto, index) in productoComputed"
               :key="index"
             >
               <div class="card" id="cardItemList" style="width: 18rem;">
@@ -56,17 +56,19 @@ export default {
   },
   computed: {
     ...mapState(["productos"]),
+    productoComputed() {
+      this.cargarJsonProductos();
+      return this.productos;
+    },
   },
   methods: {
     ...mapActions(["cargarJsonProductos"]),
+
     onSlideStart(slide) {
       this.sliding = true;
     },
     onSlideEnd(slide) {
       this.sliding = false;
-    },
-    created() {
-      this.cargarJsonProductos();
     },
   },
 };

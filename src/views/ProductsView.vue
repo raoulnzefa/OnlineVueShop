@@ -1,7 +1,10 @@
 <template>
   <div>
     <Header></Header>
-    <ProductsList />
+    <div class="container my5">
+      <h1>{{ categoriaParameter }}</h1>
+    </div>
+    <ProductsList :categoria="categoriaParameter" />
     <FooterPage></FooterPage>
   </div>
 </template>
@@ -16,6 +19,17 @@ export default {
     Header,
     FooterPage,
     ProductsList,
+  },
+  data() {
+    return {
+      parameter: "",
+    };
+  },
+  computed: {
+    categoriaParameter() {
+      this.parameter = this.$route.params.categoria;
+      return this.parameter;
+    },
   },
 };
 </script>

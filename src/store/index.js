@@ -12,7 +12,7 @@ export default new Vuex.Store({
     producto: {
       nombre: '',
       marca: '',
-      descripcion: 'computador portat',
+      descripcion: '',
       categorias: [],
       estado: '',
     },
@@ -31,7 +31,7 @@ export default new Vuex.Store({
   actions: {
     cargarJsonProductos({ commit, state }, usuario) {
       const res = productData
-      var listProducts = res.computadores.concat(res.camaras, res.partes)
+      var listProducts = res.computadores.concat(res.seguridad, res.partes)
       commit('cargarProductos', listProducts)
     },
     cargarJsonCategorias({ commit, state }, usuario) {
@@ -43,6 +43,21 @@ export default new Vuex.Store({
       const res = productData
       var listServicios = res.servicios
       commit('cargarServicios', listServicios)
+    },
+    cargarJsonComputer({ commit, state }, usuario) {
+      const res = productData
+      var listcomputadores = res.computadores
+      commit('cargarProductos', listcomputadores)
+    },
+    cargarJsonSeguridad({ commit, state }, usuario) {
+      const res = productData
+      var listseguridad = res.seguridad
+      commit('cargarProductos', listseguridad)
+    },
+    cargarJsonPartes({ commit, state }, usuario) {
+      const res = productData
+      var listpartes = res.partes
+      commit('cargarProductos', listpartes)
     },
   },
   modules: {
