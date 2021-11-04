@@ -12,13 +12,13 @@
 
 <script>
 // @ is an alias to /src
-import Header from "@/components/Header.vue";
+import Header from "@/components/Header/Header.vue";
 import Carousel from "@/components/Carousel.vue";
 import Menulist from "@/components/Menulist.vue";
 import CategoriasPart from "@/components/CategoriasPart.vue";
 import ServiciosPart from "@/components/ServiciosPart.vue";
 import ButtonW from "@/components/ButtonW.vue";
-import FooterPage from "@/components/FooterPage.vue";
+import FooterPage from "@/components/Footer/FooterPage.vue";
 import { mapActions } from "vuex";
 
 export default {

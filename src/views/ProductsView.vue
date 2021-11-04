@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div id="component">
     <Header></Header>
-    <div class="container my5">
-      <h1>{{ categoriaParameter }}</h1>
+    <div class="container my-5">
+      <h1 class="text-uppercase">{{ categoriaParameter }}</h1>
     </div>
     <ProductsList :categoria="categoriaParameter" />
     <FooterPage></FooterPage>
@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
-import FooterPage from "@/components/FooterPage.vue";
+import Header from "@/components/Header/Header.vue";
+import FooterPage from "@/components/Footer/FooterPage.vue";
 import ProductsList from "@/components/ComponentsList/ProductsList.vue";
 export default {
   name: "ProductsView",
@@ -34,4 +34,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+#component {
+  background-color: #ffc855;
+}
+</style>

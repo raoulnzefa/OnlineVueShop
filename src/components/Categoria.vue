@@ -7,7 +7,40 @@
           :key="index"
           class="col-sm-4"
         >
-          <div id="cardItem" class="card my-2" style=" ">
+          <CardComponent :servicio="categoria" buttonText="Ver Producto" />
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { mapState } from "vuex";
+import { mapActions } from "vuex";
+import CardComponent from "@/components/subComponents/CardComponent.vue";
+export default {
+  components: {
+    CardComponent,
+  },
+  name: "Categoria",
+  computed: {
+    ...mapState(["categorias"]),
+  },
+  methods: {
+    ...mapActions(["cargarJsonCategorias"]),
+  },
+  created() {
+    this.cargarJsonCategorias();
+  },
+};
+</script>
+
+<style>
+#cardItem {
+  background-color: #ffffff;
+}
+</style>
+<div id="cardItem" class="card my-2" style=" ">
             <div class="m-2">
               <img
                 :src="categoria.url"
@@ -32,35 +65,3 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
-<script>
-import { mapState } from "vuex";
-import { mapActions } from "vuex";
-import ButtonC from "./subComponents/ButtonC.vue";
-export default {
-  components: {
-    ButtonC,
-  },
-  name: "Categoria",
-  computed: {
-    ...mapState(["categorias"]),
-  },
-  methods: {
-    ...mapActions(["cargarJsonCategorias"]),
-  },
-  created() {
-    this.cargarJsonCategorias();
-  },
-};
-</script>
-
-<style>
-#cardItem {
-  background-color: #ffffff;
-}
-</style>

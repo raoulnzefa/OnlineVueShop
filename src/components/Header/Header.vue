@@ -4,7 +4,7 @@
   >
     <div class="container">
       <div class="navbar-brand">
-        <img src="../assets/logo.svg" alt="logos company" />
+        <ImageComponent pathName="logo.svg" :localResource="true" />
       </div>
 
       <button
@@ -21,45 +21,22 @@
 
       <div class="collapse navbar-collapse mr-auto" id="navbarNav">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active ">
-            <router-link
-              class="nav-link"
-              :to="{
-                name: 'Home',
-              }"
-              >Home</router-link
-            >
-          </li>
-          <li class="nav-item ">
-            <router-link
-              class="nav-link"
-              :to="{
-                name: 'ProductsView',
-                params: { categoria: computadoresItems },
-              }"
-              >Computadores</router-link
-            >
-          </li>
-          <li class="nav-item ">
-            <router-link
-              class="nav-link"
-              :to="{
-                name: 'ProductsView',
-                params: { categoria: seguridadItems },
-              }"
-              >Seguridad</router-link
-            >
-          </li>
-          <li class="nav-item ">
-            <router-link
-              class="nav-link"
-              :to="{
-                name: 'ProductsView',
-                params: { categoria: accesoriosItems },
-              }"
-              >Accesorios</router-link
-            >
-          </li>
+          <HeaderLink Name="Home" Where="Home" />
+          <HeaderLink
+            Name="Computadores"
+            Where="ProductsView"
+            :Parametro="computadoresItems"
+          />
+          <HeaderLink
+            Name="Seguridad"
+            Where="ProductsView"
+            :Parametro="seguridadItems"
+          />
+          <HeaderLink
+            Name="Accesorios"
+            Where="ProductsView"
+            :Parametro="accesoriosItems"
+          />
           <li class="nav-item ">
             <a href="/added/test.pdf" target="_blank" class="nav-link ">
               Precios
@@ -89,13 +66,19 @@
 </template>
 
 <script>
+import HeaderLink from "./HeaderLinks.vue";
+import ImageComponent from "../subComponents/ImageComponent.vue";
 export default {
   name: "Header",
+  components: {
+    HeaderLink,
+    ImageComponent,
+  },
   data() {
     return {
-      computadoresItems: "computadores",
-      seguridadItems: "seguridad",
-      accesoriosItems: "accesorios",
+      computadoresItems: { categoria: "computadores" },
+      seguridadItems: { categoria: "seguridad" },
+      accesoriosItems: { categoria: "accesorios" },
     };
   },
 };

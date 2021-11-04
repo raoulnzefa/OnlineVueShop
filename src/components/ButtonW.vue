@@ -1,5 +1,9 @@
 <template>
-  <a href="" class="float child" target="_blank">
+  <a
+    href="https://wa.me/573122448983?text=Hola%20me%20gustaria%20informacion"
+    class="float child"
+    target="_blank"
+  >
     <i class="fa fa-whatsapp my-float"></i>
   </a>
 </template>

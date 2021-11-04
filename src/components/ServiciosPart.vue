@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import Servicio from "@/components/Servicio.vue";
+import Servicio from "@/components/ServiciosComponents/Servicio.vue";
 
 export default {
   name: "ServiciosPart",

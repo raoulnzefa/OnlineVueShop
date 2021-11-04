@@ -1,12 +1,13 @@
 <template>
   <div class="container">
-    <ul class="list-group my-5">
+    <ul class="list-group list-group-flush ">
       <li
+        id="ItemsList"
         v-for="(producto, index) in productosUpdated"
         :key="index"
-        class="list-group-item"
+        class="list-group-item mt-2"
       >
-        <CardList :product="producto" />
+        <CardList class="mt-2" :product="producto" />
       </li>
     </ul>
   </div>
@@ -54,4 +55,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+#ItemsList {
+  background-color: #eeeeee;
+}
+</style>

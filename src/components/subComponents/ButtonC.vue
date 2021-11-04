@@ -1,5 +1,5 @@
 <template>
-  <button href="#" class="btn btn-primary">
+  <button href="#" :class="'btn btn-' + buttonType">
     <i class="me-1" v-bind:class="'fa ' + iconChoosen" v-if="iconButton"></i>
     {{ bText }}
   </button>
@@ -20,6 +20,10 @@ export default {
     iconButton: {
       type: Boolean,
       default: false,
+    },
+    buttonType: {
+      type: String,
+      default: "primary",
     },
   },
 };
